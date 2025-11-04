@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Library - Home</title>
-  <link rel="stylesheet" href="/styles.css">
-  <script type="module" src="/src/components/app-button.js"></script>
+  <link rel="stylesheet" href="/styles/index.css">
+  <script type="module" src="/src/components/ol-button.js"></script>
 </head>
 <body>
   <nav>
@@ -20,15 +20,15 @@
   <main>
     <h1>Welcome to Open Library</h1>
     <p>Explore, discover, and share your favorite books.</p>
-    
+
     <h2>Quick Actions</h2>
     <div style="display: flex; gap: 10px; margin-top: 15px;">
-      <app-button type="button" onclick="location.href='/trending.html'">
+      <ol-button type="button" onclick="location.href='/trending.html'">
         Browse Trending Books
-      </app-button>
-      <app-button type="button" onclick="location.href='/add-book.html'">
+      </ol-button>
+      <ol-button type="button" onclick="location.href='/add-book.html'">
         Add a Book
-      </app-button>
+      </ol-button>
     </div>
   </main>
 </body>

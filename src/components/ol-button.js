@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 
-export class AppButton extends LitElement {
+export class OlButton extends LitElement {
   static properties = {
     type: { type: String },
   };
@@ -53,5 +53,5 @@ export class AppButton extends LitElement {
   }
 }
 
-customElements.define('app-button', AppButton);
+customElements.define('ol-button', OlButton);
 
