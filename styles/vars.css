@@ -1,0 +1,13 @@
+/* ========================================
+   DESIGN TOKENS - MAIN ENTRY POINT
+   Import all token layers in order
+   ======================================== */
+
+/* Tier 1: Primitive tokens (base values) */
+@import './primitives.css';
+
+/* Tier 2: Semantic tokens (purpose-based) */
+@import './semantic.css';
+
+/* Tier 3: Component tokens (component-specific) */
+@import './components.css';

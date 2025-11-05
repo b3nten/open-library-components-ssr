@@ -1,3 +1,5 @@
+@import './vars.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: var(--color-bg-primary);
 }
 
 nav {
@@ -35,6 +38,12 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
+  line-height: var(--font-heading-line-height);
 }
 
 h1 {

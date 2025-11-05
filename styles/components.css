@@ -1,0 +1,59 @@
+:root {
+  /* ========================================
+     TIER 3: COMPONENT TOKENS
+     Component-specific tokens for fine control
+     ======================================== */
+
+  /* BUTTON COMPONENTS */
+  --button-padding-x: var(--spacing-element);
+  --button-padding-y: var(--spacing-inline);
+  --button-font-size: var(--font-body-size);
+  --button-font-weight: var(--font-body-weight);
+  --button-border-width: 1px;
+  --button-focus-ring: 0 0 0 3px rgba(59, 130, 246, 0.1);
+
+  --button-sm-padding-x: var(--spacing-inline);
+  --button-sm-padding-y: var(--spacing-inline);
+  --button-sm-font-size: var(--font-body-sm-size);
+
+  --button-lg-padding-x: var(--spacing-component);
+  --button-lg-padding-y: var(--spacing-element);
+  --button-lg-font-size: var(--font-body-lg-size);
+
+  /* INPUT COMPONENTS */
+  --input-padding-x: var(--spacing-inline);
+  --input-padding-y: var(--spacing-inline);
+  --input-font-size: var(--font-body-size);
+  --input-border-width: 1px;
+  --input-focus-ring: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  --input-min-height: 40px;
+
+  /* CARD COMPONENTS */
+  --card-padding: var(--spacing-component);
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --card-border-width: 1px;
+
+  /* MODAL/OVERLAY COMPONENTS */
+  --modal-padding: var(--spacing-container);
+  --modal-max-width: 600px;
+  --modal-shadow: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+
+  /* NAVIGATION COMPONENTS */
+  --nav-height: 60px;
+  --nav-padding-x: var(--spacing-component);
+  --nav-item-padding-x: var(--spacing-element);
+  --nav-item-padding-y: var(--spacing-inline);
+
+  /* BADGE COMPONENTS */
+  --badge-padding-x: var(--spacing-inline);
+  --badge-padding-y: var(--spacing-inline);
+  --badge-font-size: var(--font-body-sm-size);
+  --badge-font-weight: var(--font-body-weight);
+
+  /* NOTIFICATION COMPONENTS */
+  --notification-padding: var(--spacing-element);
+  --notification-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --notification-max-width: 400px;
+}
+

@@ -1,0 +1,108 @@
+:root {
+  /* ========================================
+     TIER 2: SEMANTIC TOKENS
+     Purpose-based tokens that reference primitives
+     ======================================== */
+
+  /* SEMANTIC COLORS */
+  /* Brand */
+  --color-primary: var(--color-blue-600);
+  --color-primary-hover: var(--color-blue-700);
+  --color-primary-active: var(--color-blue-800);
+  --color-primary-light: var(--color-blue-100);
+
+  --color-secondary: var(--color-gray-600);
+  --color-secondary-hover: var(--color-gray-700);
+  --color-secondary-active: var(--color-gray-800);
+
+  /* Feedback */
+  --color-success: var(--color-green-600);
+  --color-success-light: var(--color-green-100);
+  --color-success-dark: var(--color-green-700);
+
+  --color-error: var(--color-red-600);
+  --color-error-light: var(--color-red-100);
+  --color-error-dark: var(--color-red-700);
+
+  --color-warning: var(--color-yellow-500);
+  --color-warning-light: var(--color-yellow-100);
+  --color-warning-dark: var(--color-yellow-700);
+
+  --color-info: var(--color-blue-500);
+  --color-info-light: var(--color-blue-100);
+  --color-info-dark: var(--color-blue-700);
+
+  /* Text */
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-tertiary: var(--color-gray-500);
+  --color-text-disabled: var(--color-gray-400);
+  --color-text-inverse: var(--color-white);
+  --color-text-link: var(--color-blue-600);
+  --color-text-link-hover: var(--color-blue-700);
+
+  /* Backgrounds */
+  --color-bg-primary: var(--color-book-50);
+  --color-bg-secondary: var(--color-gray-50);
+  --color-bg-tertiary: var(--color-gray-100);
+  --color-bg-inverse: var(--color-gray-900);
+  --color-bg-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Borders */
+  --color-border-primary: var(--color-gray-300);
+  --color-border-secondary: var(--color-gray-200);
+  --color-border-focus: var(--color-blue-500);
+
+  /* SEMANTIC TYPOGRAPHY */
+  /* Headings */
+  --font-heading-family: var(--font-family-serif);
+  --font-heading-weight: var(--font-weight-bold);
+  --font-heading-line-height: var(--line-height-tight);
+
+  --font-h1-size: var(--font-size-4xl);
+  --font-h2-size: var(--font-size-3xl);
+  --font-h3-size: var(--font-size-2xl);
+  --font-h4-size: var(--font-size-xl);
+  --font-h5-size: var(--font-size-lg);
+  --font-h6-size: var(--font-size-md);
+
+  /* Body */
+  --font-body-family: var(--font-family-sans);
+  --font-body-size: var(--font-size-md);
+  --font-body-weight: var(--font-weight-normal);
+  --font-body-line-height: var(--line-height-normal);
+
+  --font-body-sm-size: var(--font-size-sm);
+  --font-body-lg-size: var(--font-size-lg);
+
+  /* Code */
+  --font-code-family: var(--font-family-mono);
+  --font-code-size: var(--font-size-sm);
+
+  /* SEMANTIC SPACING */
+  --spacing-section: var(--spacing-16);
+  --spacing-container: var(--spacing-12);
+  --spacing-component: var(--spacing-6);
+  --spacing-element: var(--spacing-4);
+  --spacing-inline: var(--spacing-2);
+
+  /* SEMANTIC RADIUS */
+  --radius-button: var(--radius-md);        /* buttons, tabs, pills */
+  --radius-input: var(--radius-md);         /* inputs, textareas */
+  --radius-card: var(--radius-lg);          /* cards, panels */
+  --radius-container: var(--radius-lg);     /* containers, wrappers */
+  --radius-overlay: var(--radius-xl);       /* dialogs, modals */
+  --radius-badge: var(--radius-sm);         /* badges, tags */
+  --radius-notification: var(--radius-lg);  /* notifications, alerts */
+  --radius-avatar: var(--radius-full);      /* avatars, profile images */
+  --radius-image: var(--radius-md);         /* general images */
+
+  /* SEMANTIC TRANSITIONS */
+  --transition-button: var(--duration-fast) var(--ease-out);
+  --transition-input: var(--duration-fast) var(--ease-in-out);
+  --transition-modal: var(--duration-normal) var(--ease-out);
+  --transition-dropdown: var(--duration-fast) var(--ease-out);
+  --transition-tooltip: var(--duration-fast) var(--ease-out);
+  --transition-fade: var(--duration-normal) var(--ease-in-out);
+}
+
