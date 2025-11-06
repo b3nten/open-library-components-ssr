@@ -17,33 +17,35 @@ body {
 }
 
 nav {
-  background-color: var(--nav-surface);
-  padding: 15px;
-  margin-bottom: 30px;
-  border-radius: var(--radius-card);
+  /* background-color: var(--nav-surface); */
+  /* padding: 15px; */
+  margin-bottom: var(--spacing-section);
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  border: 1px solid var(--nav-outline);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 8px;
   flex-wrap: wrap;
   flex: 1;
 }
 
 nav a {
-  color: var(--color-link);
+  color: var(--color-text-primary);
   text-decoration: none;
   font-weight: var(--font-weight-medium);
+  background-color: var(--color-surface-tertiary);
+  padding: var(--spacing-inline) var(--spacing-element);
+  border-radius: var(--radius-button);
 }
 
 nav a:hover {
-  color: var(--color-link-hovered);
-  text-decoration: underline;
+  /* color: var(--color-link-hovered); */
+  text-decoration: none;
+  background-color: var(--color-surface-tertiary-hovered);
 }
 
 h1, h2, h3, h4, h5, h6 {

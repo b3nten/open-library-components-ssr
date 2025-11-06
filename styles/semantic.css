@@ -12,13 +12,13 @@
   --color-surface: var(--color-neutral-50);
 
   /* Secondary backgrounds - use for cards, sidebars, navigation, elevated panels */
-  --color-surface-variant: var(--color-neutral-cool-50);
+  --color-surface-variant: var(--color-neutral-50);
 
   /* Tertiary backgrounds - use for subtle differentiation, nested cards, hover states on surfaces */
-  --color-surface-tertiary: var(--color-neutral-cool-100);
+  --color-surface-tertiary: var(--color-neutral-200);
 
   /* High-contrast inverse surfaces - use for tooltips, toasts, inverse-themed components */
-  --color-surface-inverse: var(--color-neutral-cool-900);
+  --color-surface-inverse: var(--color-neutral-900);
 
   /* Semi-transparent overlay behind modals/dialogs - blocks interaction with content below */
   --color-scrim: rgba(0, 0, 0, 0.5);
@@ -27,16 +27,16 @@
   /* "On" colors guarantee contrast with their paired surface */
 
   /* Primary text on main surfaces - body text, headings, high-emphasis content */
-  --color-on-surface: var(--color-neutral-cool-900);
+  --color-on-surface: var(--color-neutral-900);
 
   /* Secondary/muted text - captions, labels, supporting text, placeholders */
-  --color-on-surface-variant: var(--color-neutral-cool-600);
+  --color-on-surface-variant: var(--color-neutral-600);
 
   /* Tertiary/de-emphasized text - timestamps, helper text, low-priority content */
-  --color-on-surface-tertiary: var(--color-neutral-cool-500);
-
+  --color-on-surface-tertiary: var(--color-neutral-500);
+  --color-surface-tertiary-hovered: var(--color-neutral-300);
   /* Disabled text and elements - visually indicates non-interactive state */
-  --color-on-surface-disabled: var(--color-neutral-cool-400);
+  --color-on-surface-disabled: var(--color-neutral-400);
 
   /* Text on inverse surfaces - guaranteed contrast on dark backgrounds */
   --color-on-surface-inverse: var(--color-white);
@@ -68,17 +68,17 @@
   /* === SECONDARY BRAND SYSTEM === */
   /* Use for secondary actions, less prominent interactive elements */
 
-  --color-secondary: var(--color-neutral-cool-600);
+  --color-secondary: var(--color-neutral-600);
   --color-on-secondary: var(--color-white);
 
   /* Lower-emphasis secondary container - alternative to primary, supporting actions */
-  --color-secondary-container: var(--color-neutral-cool-100);
-  --color-on-secondary-container: var(--color-neutral-cool-900);
+  --color-secondary-container: var(--color-neutral-100);
+  --color-on-secondary-container: var(--color-neutral-900);
 
   /* State variants */
-  --color-secondary-hovered: var(--color-neutral-cool-700);
-  --color-secondary-pressed: var(--color-neutral-cool-800);
-  --color-secondary-focused: var(--color-neutral-cool-500);
+  --color-secondary-hovered: var(--color-neutral-700);
+  --color-secondary-pressed: var(--color-neutral-800);
+  --color-secondary-focused: var(--color-neutral-500);
 
   /* === SUCCESS SYSTEM === */
   /* Use for positive feedback, confirmations, success states */
@@ -112,7 +112,7 @@
   /* Use for warnings, caution states, non-critical issues */
 
   --color-warning: var(--color-yellow-500);
-  --color-on-warning: var(--color-neutral-cool-900);
+  --color-on-warning: var(--color-neutral-900);
 
   /* Warning container - low-emphasis warning backgrounds */
   --color-warning-container: var(--color-yellow-100);
@@ -140,13 +140,13 @@
   /* Use for visual separation and hierarchy */
 
   /* Default borders - standard UI element borders (inputs, cards, dividers) */
-  --color-border-default: var(--color-neutral-cool-300);
+  --color-border-default: var(--color-neutral-300);
 
   /* Subtle borders - less prominent separation, nested elements */
-  --color-border-subtle: var(--color-neutral-cool-200);
+  --color-border-subtle: var(--color-neutral-200);
 
   /* Strong borders - high-emphasis separation, active states */
-  --color-border-strong: var(--color-neutral-cool-400);
+  --color-border-strong: var(--color-neutral-400);
 
   /* Focus outline - keyboard focus indicator, accessibility critical */
   --color-outline-focus: var(--color-blue-500);
@@ -333,18 +333,18 @@
 
 body[data-theme="dark"] {
   /* === SURFACE SYSTEM - DARK === */
-  --color-surface: var(--color-neutral-cool-900);
-  --color-surface-variant: var(--color-neutral-cool-800);
-  --color-surface-tertiary: var(--color-neutral-cool-700);
-  --color-surface-inverse: var(--color-neutral-cool-50);
+  --color-surface: var(--color-neutral-900);
+  --color-surface-variant: var(--color-neutral-800);
+  --color-surface-tertiary: var(--color-neutral-700);
+  --color-surface-inverse: var(--color-neutral-50);
   --color-scrim: rgba(0, 0, 0, 0.7);
 
   /* === ON-SURFACE COLORS - DARK === */
-  --color-on-surface: var(--color-neutral-cool-100);
-  --color-on-surface-variant: var(--color-neutral-cool-400);
-  --color-on-surface-tertiary: var(--color-neutral-cool-500);
-  --color-on-surface-disabled: var(--color-neutral-cool-600);
-  --color-on-surface-inverse: var(--color-neutral-cool-900);
+  --color-on-surface: var(--color-neutral-100);
+  --color-on-surface-variant: var(--color-neutral-400);
+  --color-on-surface-tertiary: var(--color-neutral-500);
+  --color-on-surface-disabled: var(--color-neutral-600);
+  --color-on-surface-inverse: var(--color-neutral-900);
 
   /* === PRIMARY BRAND - DARK === */
   /* Slightly lighter for better visibility on dark backgrounds */
@@ -358,14 +358,14 @@ body[data-theme="dark"] {
   --color-primary-focused: var(--color-blue-400);
 
   /* === SECONDARY BRAND - DARK === */
-  --color-secondary: var(--color-neutral-cool-400);
-  --color-on-secondary: var(--color-neutral-cool-900);
-  --color-secondary-container: var(--color-neutral-cool-700);
-  --color-on-secondary-container: var(--color-neutral-cool-100);
+  --color-secondary: var(--color-neutral-400);
+  --color-on-secondary: var(--color-neutral-900);
+  --color-secondary-container: var(--color-neutral-700);
+  --color-on-secondary-container: var(--color-neutral-100);
 
-  --color-secondary-hovered: var(--color-neutral-cool-300);
-  --color-secondary-pressed: var(--color-neutral-cool-500);
-  --color-secondary-focused: var(--color-neutral-cool-300);
+  --color-secondary-hovered: var(--color-neutral-300);
+  --color-secondary-pressed: var(--color-neutral-500);
+  --color-secondary-focused: var(--color-neutral-300);
 
   /* === SUCCESS - DARK === */
   --color-success: var(--color-green-500);
@@ -387,7 +387,7 @@ body[data-theme="dark"] {
 
   /* === WARNING - DARK === */
   --color-warning: var(--color-yellow-500);
-  --color-on-warning: var(--color-neutral-cool-900);
+  --color-on-warning: var(--color-neutral-900);
   --color-warning-container: var(--color-yellow-900);
   --color-on-warning-container: var(--color-yellow-100);
 
@@ -404,9 +404,9 @@ body[data-theme="dark"] {
   --color-info-pressed: var(--color-blue-500);
 
   /* === BORDERS & OUTLINES - DARK === */
-  --color-border-default: var(--color-neutral-cool-700);
-  --color-border-subtle: var(--color-neutral-cool-800);
-  --color-border-strong: var(--color-neutral-cool-600);
+  --color-border-default: var(--color-neutral-700);
+  --color-border-subtle: var(--color-neutral-800);
+  --color-border-strong: var(--color-neutral-600);
   --color-outline-focus: var(--color-blue-500);
   --color-outline-error: var(--color-red-500);
 
