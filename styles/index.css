@@ -35,7 +35,6 @@ h2 {
 
 p.lead {
   font-size: var(--font-h4-size);
-  /* font-weight: var(--font-heading-weight); */
   color: var(--color-on-surface-variant);
   margin-bottom: var(--spacing-section);
   line-height: var(--line-height-tight);
@@ -234,8 +233,6 @@ input:focus {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: var(--spacing-element);
-  /* margin-top: 20px; */
-  /* margin-bottom: var(--spacing-section); */
 }
 
 .trending-book {

@@ -11,7 +11,6 @@ export default defineConfig(({ command }) => ({
         trending: resolve(__dirname, 'trending.html'),
         forms: resolve(__dirname, 'forms.html'),
         components: resolve(__dirname, 'components.html'),
-        buttonGroupDemo: resolve(__dirname, 'button-group-demo.html'),
       },
     },
   },
