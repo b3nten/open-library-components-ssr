@@ -32,7 +32,7 @@
 
   /* Tertiary/de-emphasized text - timestamps, helper text, low-priority content */
   --color-on-surface-tertiary: var(--color-neutral-500);
-  --color-surface-tertiary-hovered: var(--color-neutral-300);
+  --color-surface-tertiary-hovered: var(--color-neutral-400);
   /* Disabled text and elements - visually indicates non-interactive state */
   --color-on-surface-disabled: var(--color-neutral-400);
 
@@ -163,7 +163,7 @@
   --radius-image: var(--radius-md);         /* general images */
 
   /* === BORDER WIDTHS === */
-  --border-width-control: var(--border-width-2);
+  --border-width-control: var(--border-width-1);
   --border-width-media: var(--border-width-3);
   --border-width-divider: var(--border-width-2);
 }
@@ -176,15 +176,10 @@
 
 :root {
   /* === BUTTON COMPONENTS === */
-  --button-container: var(--color-primary);
-  --button-on-container: var(--color-on-primary);
-  --button-container-hovered: var(--color-primary-hovered);
-  --button-container-pressed: var(--color-primary-pressed);
-
   --button-padding-x: var(--spacing-element);
   --button-padding-y: var(--spacing-inline);
-  --button-font-size: var(--font-body-size);
-  --button-font-weight: var(--font-body-weight);
+  /* --button-font-size: var(--font-body-size);
+  --button-font-weight: var(--font-body-weight); */
   --button-border-width: var(--border-width-2);
   --button-focus-ring: var(--focus-ring);
 
@@ -247,6 +242,8 @@ body[data-theme="dark"] {
   --color-surface-variant: var(--color-neutral-800);
   --color-surface-tertiary: var(--color-neutral-700);
   --color-surface-inverse: var(--color-neutral-50);
+
+  --color-surface-tertiary-hovered: var(--color-neutral-600);
 
   /* === ON-SURFACE COLORS - DARK === */
   --color-on-surface: var(--color-neutral-100);

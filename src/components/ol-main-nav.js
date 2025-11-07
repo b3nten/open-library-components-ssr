@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit';
+import './ol-theme-toggle.js';
 
 export class OlMainNav extends LitElement {
   static styles = css`
@@ -18,18 +19,41 @@ export class OlMainNav extends LitElement {
       list-style: none;
       display: flex;
       gap: 8px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       flex: 1;
       margin: 0;
       padding: 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+    }
+
+    /* Hide scrollbar on webkit browsers for cleaner look */
+    ul::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    ul::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ul::-webkit-scrollbar-thumb {
+      background: var(--color-surface-tertiary);
+      border-radius: 2px;
+    }
+
+    ul::-webkit-scrollbar-thumb:hover {
+      background: var(--color-surface-tertiary-hovered);
     }
 
     li {
       margin: 0;
+      flex-shrink: 0;
     }
 
     a {
-      color: var(--color-secondary);
+      display: block;
+      color: var(--color-on-surface);
       text-decoration: none;
       font-weight: var(--font-weight-semibold);
       background-color: var(--color-surface-tertiary);
@@ -52,8 +76,8 @@ export class OlMainNav extends LitElement {
           <li><a href="/trending.html">Trending Books</a></li>
           <li><a href="/components.html">Components</a></li>
           <li><a href="/forms.html">Forms</a></li>
+          <li><ol-theme-toggle></ol-theme-toggle></li>
         </ul>
-        <ol-theme-toggle></ol-theme-toggle>
       </nav>
     `;
   }

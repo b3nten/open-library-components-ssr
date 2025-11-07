@@ -7,23 +7,23 @@ export class OlThemeToggle extends LitElement {
 
   static styles = css`
     button {
-      padding: 8px 12px;
+      padding: var(--spacing-inline) var(--spacing-element);
       cursor: pointer;
-      background: var(--color-surface-variant);
+      background-color: var(--color-surface-tertiary);
       color: var(--color-on-surface);
-      border: 1px solid var(--color-border-default);
+      border: none;
       border-radius: var(--radius-button);
+      font-size: var(--font-body-sm-size);
       font-family: var(--font-body-family);
-      font-size: var(--font-size-sm);
-      font-weight: var(--font-weight-medium);
+      height: 100%;
+      font-weight: var(--font-weight-semibold);
       display: flex;
       align-items: center;
       gap: 6px;
     }
 
     button:hover {
-      background: var(--color-surface-tertiary);
-      border-color: var(--color-outline-focus);
+      background-color: var(--color-surface-tertiary-hovered);
     }
 
     button:active {
