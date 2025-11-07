@@ -165,6 +165,7 @@
   /* === BORDER WIDTHS === */
   --border-width-control: var(--border-width-2);
   --border-width-media: var(--border-width-3);
+  --border-width-divider: var(--border-width-2);
 }
 
 /* ========================================

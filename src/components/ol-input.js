@@ -141,6 +141,25 @@ export class OlInput extends LitElement {
     this.dispatchEvent(new Event('change', { bubbles: true, composed: true }));
   }
 
+  _handleKeyDown(e) {
+    // Handle Enter key to submit parent form (mimics native input behavior)
+    if (e.key === 'Enter' && !e.shiftKey && !e.ctrlKey && !e.metaKey) {
+      const form = this.closest('form');
+      if (form) {
+        // Prevent default to avoid any duplicate submissions
+        e.preventDefault();
+
+        // Use requestSubmit() to trigger validation and submit event
+        if (form.requestSubmit) {
+          form.requestSubmit();
+        } else {
+          // Fallback for older browsers
+          form.submit();
+        }
+      }
+    }
+  }
+
   firstUpdated() {
     // Set initial validity state
     this._updateFormValue();
@@ -164,6 +183,7 @@ export class OlInput extends LitElement {
         autocomplete="${this.autocomplete}"
         @input="${this._handleInput}"
         @change="${this._handleChange}"
+        @keydown="${this._handleKeyDown}"
         aria-invalid="${this._internals.validity?.valid === false ? 'true' : 'false'}"
       />
     `;

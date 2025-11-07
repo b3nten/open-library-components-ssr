@@ -38,7 +38,7 @@ export class OlButton extends LitElement {
     }
 
     button {
-      border: none;
+      border: var(--border-width-control) solid var(--color-primary);
       border-radius: var(--radius-button);
       cursor: pointer;
       font-family: var(--font-body-family);
