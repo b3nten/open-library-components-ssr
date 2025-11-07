@@ -1,4 +1,4 @@
-# Open Library Design Vision
+# Open Library Prototype
 
 A minimal web app built with Lit web components and Vite, inspired by Open Library.
 
