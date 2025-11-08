@@ -7,8 +7,8 @@
 }
 
 body {
-  font-family: var(--font-body-family);
-  line-height: var(--font-body-line-height);
+  font-family: var(--body-font-family);
+  line-height: var(--body-line-height);
   color: var(--color-text);
   max-width: 1200px;
   margin: 0 auto;
@@ -17,9 +17,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading-family);
-  font-weight: var(--font-heading-weight);
-  line-height: var(--font-heading-line-height);
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  line-height: var(--heading-line-height);
 }
 
 h1 {

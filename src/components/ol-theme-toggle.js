@@ -13,8 +13,8 @@ export class OlThemeToggle extends LitElement {
       color: var(--color-text);
       border: none;
       border-radius: var(--radius-button);
-      font-size: var(--font-body-sm-size);
-      font-family: var(--font-body-family);
+      font-size: var(--body-font-size-sm);
+      font-family: var(--body-font-family);
       height: 100%;
       font-weight: var(--font-weight-semibold);
       display: flex;

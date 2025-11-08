@@ -14,7 +14,7 @@ export class OlMainNav extends LitElement {
       margin-bottom: var(--spacing-section);
       margin-left: -20px;
       margin-right: -20px;
-      font-size: var(--font-body-sm-size);
+      font-size: var(--body-font-size-sm);
     }
 
     ul {

@@ -14,10 +14,10 @@ export class OlHeading extends LitElement {
     }
 
     .ol-heading {
-      font-family: var(--font-heading-family);
-      font-weight: var(--font-heading-weight);
-      line-height: var(--font-heading-line-height);
-      color: var(--color-text);
+      font-family: var(--heading-font-family);
+      font-weight: var(--heading-font-weight);
+      line-height: var(--heading-line-height);
+      color: var(--heading-color);
       margin: 0;
       margin-bottom: var(--spacing-heading-bottom);
       display: flex;
@@ -26,16 +26,19 @@ export class OlHeading extends LitElement {
     }
 
     /* Display sizes - largest headings */
+    .display-1, .display-2, .display-3 {
+      font-family: var(--display-font-family);
+      font-weight: var(--display-font-weight);
+      line-height: var(--display-line-height);
+      color: var(--display-color);
+    }
+
     .display-1 {
       font-size: var(--heading-display-1-size);
-      letter-spacing: -0.02em;
-      line-height: var(--font-display-line-height);
     }
 
     .display-2 {
       font-size: var(--heading-display-2-size);
-      letter-spacing: -0.02em;
-      line-height: var(--font-display-line-height);
     }
 
     /* Title sizes - standard headings */

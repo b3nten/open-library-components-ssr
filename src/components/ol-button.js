@@ -41,7 +41,7 @@ export class OlButton extends LitElement {
       border: var(--border-width-control) solid var(--color-primary);
       border-radius: var(--radius-button);
       cursor: pointer;
-      font-family: var(--font-body-family);
+      font-family: var(--body-font-family);
       /* font-weight: normal; */
       text-align: center;
       white-space: nowrap;
@@ -52,13 +52,13 @@ export class OlButton extends LitElement {
 
     /* Size variants */
     button.small {
-      font-size: var(--font-body-sm-size);
+      font-size: var(--body-font-size-sm);
       padding: var(--button-sm-padding-y) var(--button-sm-padding-x);
       /* line-height: 1.4em; */
     }
 
     button.medium {
-      font-size: var(--font-body-size);
+      font-size: var(--body-font-size);
       padding: var(--button-padding-y) var(--button-padding-x);
     }
 

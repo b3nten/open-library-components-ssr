@@ -16,13 +16,13 @@
   --color-bg-recessed-hovered: var(--color-neutral-400);
 
   /* === TEXT COLORS === */
-  --color-text: var(--color-neutral-900);
-  --color-text-on-elevated: var(--color-neutral-900);
-  --color-text-on-recessed: var(--color-neutral-900);
+  --color-text: var(--color-neutral-700);
+  --color-text-strong: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-600);
+  --color-text-on-elevated: var(--color-neutral-800);
+  --color-text-on-recessed: var(--color-neutral-800);
   --color-text-on-primary: var(--color-neutral-50);
 
-  /* Secondary/muted text - captions, labels, supporting text, placeholders */
-  --color-text-secondary: var(--color-neutral-600);
 
   /* === PRIMARY BRAND SYSTEM === */
   /* Use for primary actions, key interactive elements, brand expression */
@@ -73,26 +73,30 @@
 
   /* === SEMANTIC TYPOGRAPHY === */
   /* Headings */
-  --font-display-line-height: var(--line-height-extra-tight);
+  --display-color: var(--color-text-strong);
+  --display-font-family: var(--font-family-serif);
+  --display-font-weight: var(--font-weight-semibold);
+  --display-line-height: var(--line-height-extra-tight);
 
-  --font-heading-family: var(--font-family-serif);
-  --font-heading-weight: var(--font-weight-bold);
-  --font-heading-line-height: var(--line-height-tight);
+  --heading-color: var(--color-text-strong);
+  --heading-font-family: var(--font-family-serif);
+  --heading-font-weight: var(--font-weight-semibold);
+  --heading-line-height: var(--line-height-tight);
 
   /* Body */
-  --font-body-family: var(--font-family-sans);
-  --font-body-size: var(--font-size-md);
-  --font-body-weight: var(--font-weight-normal);
-  --font-body-line-height: var(--line-height-normal);
+  --body-font-family: var(--font-family-sans);
+  --body-font-size: var(--font-size-md);
+  --body-font-weight: var(--font-weight-normal);
+  --body-line-height: var(--line-height-normal);
 
-  --font-body-sm-size: var(--font-size-sm);
-  --font-body-lg-size: var(--font-size-lg);
+  --body-font-size-sm: var(--font-size-sm);
+  --body-font-size-lg: var(--font-size-lg);
 
   /* === SEMANTIC SPACING === */
   --spacing-text-bottom: var(--spacing-1);
   --spacing-heading-bottom: var(--spacing-2);
 
-  --spacing-section: var(--spacing-12);
+  --spacing-section: var(--spacing-8);
   --spacing-field: var(--spacing-6);
   --spacing-component: var(--spacing-6);
   --spacing-element: var(--spacing-4);
@@ -123,19 +127,19 @@
   /* === BUTTON COMPONENTS === */
   --button-padding-x: var(--spacing-element);
   --button-padding-y: var(--spacing-inline);
-  /* --button-font-size: var(--font-body-size);
-  --button-font-weight: var(--font-body-weight); */
+  /* --button-font-size: var(--body-font-size);
+  --button-font-weight: var(--body-font-weight); */
   --button-border-width: var(--border-width-2);
   --button-focus-ring: var(--focus-ring);
 
   /* Button size variants */
   --button-sm-padding-x: var(--spacing-3);
   --button-sm-padding-y: var(--spacing-1);
-  --button-sm-font-size: var(--font-body-sm-size);
+  --button-sm-font-size: var(--body-font-size-sm);
 
   --button-lg-padding-x: var(--spacing-component);
   --button-lg-padding-y: var(--spacing-element);
-  --button-lg-font-size: var(--font-body-lg-size);
+  --button-lg-font-size: var(--body-font-size-lg);
 
   /* === INPUT COMPONENTS === */
   --input-surface: var(--color-bg-elevated);
@@ -147,7 +151,7 @@
 
   --input-padding-x: var(--spacing-3);
   --input-padding-y: var(--spacing-2);
-  --input-font-size: var(--font-body-size);
+  --input-font-size: var(--body-font-size);
   --input-border-width: var(--border-width-control);
   --input-focus-ring: var(--focus-ring);
   --input-min-height: var(--control-height-md);
@@ -188,10 +192,14 @@ body[data-theme="dark"] {
   --input-surface: var(--color-bg-elevated);
   /* === TEXT COLORS - DARK === */
   --color-text: var(--color-neutral-100);
+  --color-text-strong: var(--color-neutral-50);
+  --color-text-secondary: var(--color-neutral-400);
   --color-text-on-elevated: var(--color-neutral-400);
   --color-text-on-recessed: var(--color-neutral-400);
   --color-text-on-primary: var(--color-neutral-50);
-  --color-text-secondary: var(--color-neutral-400);
+
+  --display-color: var(--color-text-strong);
+  --heading-color: var(--color-text-strong);
 
   /* === PRIMARY BRAND - DARK === */
   /* Slightly lighter for better visibility on dark backgrounds */

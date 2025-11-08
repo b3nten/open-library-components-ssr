@@ -30,7 +30,7 @@ export class OlField extends LitElement {
       display: flex;
       align-items: center;
       gap: var(--spacing-1);
-      font-size: var(--font-body-size);
+      font-size: var(--body-font-size);
       font-weight: var(--font-weight-semibold);
       color: var(--color-text);
       margin-bottom: var(--spacing-1);
@@ -42,13 +42,13 @@ export class OlField extends LitElement {
     }
 
     .hint {
-      font-size: var(--font-body-sm-size);
+      font-size: var(--body-font-size-sm);
       color: var(--color-text-secondary);
       margin-bottom: var(--spacing-1);
     }
 
     .error {
-      font-size: var(--font-body-sm-size);
+      font-size: var(--body-font-size-sm);
       color: var(--color-error);
       margin-top: var(--spacing-1);
       display: flex;
