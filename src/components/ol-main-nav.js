@@ -23,6 +23,7 @@ export class OlMainNav extends LitElement {
       flex-wrap: nowrap;
       flex: 1;
       margin: 0;
+      gap: var(--spacing-inline);
       padding: 0 20px;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
@@ -57,12 +58,12 @@ export class OlMainNav extends LitElement {
       color: var(--color-text);
       text-decoration: none;
       font-weight: var(--font-weight-semibold);
-      background-color: var(--color-bg-elevated);
-      padding: var(--spacing-inline) var(--spacing-element);
+      padding: var(--spacing-inline) var(--spacing-inline);
+      border-bottom: var(--border-width-2) solid transparent;
     }
 
     a:hover {
-      background-color: var(--color-bg-elevated-hovered);
+      border-bottom: var(--border-width-2) solid var(--color-text);
     }
   `;
 

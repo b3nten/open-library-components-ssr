@@ -45,7 +45,7 @@ This pattern makes dark mode transitions automatic.
   --color-bg-hovered: var(--color-neutral-200);
 
   /* Secondary backgrounds - use for cards, sidebars, navigation, elevated panels */
-  --color-bg-elevated: var(--color-white);
+  --color-bg-elevated: var(--color-white  );
   --color-bg-elevated-hovered: var(--color-neutral-100);
 
   --color-bg-recessed: var(--color-neutral-300);

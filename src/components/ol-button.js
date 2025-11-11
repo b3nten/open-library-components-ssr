@@ -85,7 +85,7 @@ export class OlButton extends LitElement {
     }
 
     button.secondary:hover:not(:disabled) {
-      background-color: rgba(27, 127, 167, 0.1);
+      background-color: var(--color-bg-elevated-hovered);
     }
 
     button.destructive {

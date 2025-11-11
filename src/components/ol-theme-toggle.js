@@ -7,12 +7,9 @@ export class OlThemeToggle extends LitElement {
 
   static styles = css`
     button {
-      padding: var(--spacing-inline) var(--spacing-element);
+      padding: var(--spacing-inline) var(--spacing-inline);
       cursor: pointer;
-      background-color: var(--color-bg-elevated);
       color: var(--color-text);
-      border: none;
-      border-radius: 0 var(--radius-button) var(--radius-button) 0 ;
       font-size: var(--body-font-size-sm);
       font-family: var(--body-font-family);
       height: 100%;
@@ -20,10 +17,14 @@ export class OlThemeToggle extends LitElement {
       display: flex;
       align-items: center;
       gap: 6px;
+      background-color: transparent;
+      border: none;
+      border-bottom: var(--border-width-2) solid transparent;
     }
 
     button:hover {
-      background-color: var(--color-bg-elevated-hovered);
+      border-bottom: var(--border-width-2) solid var(--color-text);
+
     }
 
     button:active {
