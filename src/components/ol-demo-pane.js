@@ -1,5 +1,6 @@
 import { LitElement, html, css, unsafeCSS } from 'lit';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
+import './ol-button.js';
 
 /**
  * A demo pane component that renders a template's content live
@@ -43,29 +44,6 @@ export class OlDemoPane extends LitElement {
       position: relative;
       border-radius: var(--radius-card, 8px);
       overflow: hidden;
-    }
-
-    .copy-button {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      border: var(--border-width-control, 1px) solid var(--color-border, #e5e7eb);
-      background: var(--color-bg-elevated, white);
-      padding: var(--spacing-1) var(--spacing-2);
-      cursor: pointer;
-      border-radius: var(--radius-button, 4px);
-      font-size: var(--font-size-xs, 14px);
-      color: var(--color-text, #000);
-      transition: background-color 0.2s;
-      z-index: 1;
-    }
-
-    .copy-button:hover {
-      background: var(--color-bg-elevated-hovered, #f5f5f5);
-    }
-
-    .copy-button:active {
-      transform: translateY(1px);
     }
 
     pre {
@@ -241,7 +219,7 @@ export class OlDemoPane extends LitElement {
   async _copyCode() {
     try {
       await navigator.clipboard?.writeText(this._code);
-      const button = this.shadowRoot.querySelector('.copy-button');
+      const button = this.shadowRoot.querySelector('ol-button');
       if (button) {
         const originalText = button.textContent;
         button.textContent = 'Copied!';
@@ -261,7 +239,7 @@ export class OlDemoPane extends LitElement {
           ${this._templateContent}
         </div>
         <div class="code">
-          <button class="copy-button" @click=${this._copyCode}>Copy</button>
+          <ol-button style="display: none" size="small" variant="secondary" @click=${this._copyCode}>Copy</ol-button>
           <pre><code class="language-markup">${unsafeHTML(this._highlightedCode)}</code></pre>
         </div>
       </div>
