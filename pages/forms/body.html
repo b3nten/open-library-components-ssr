@@ -1,0 +1,151 @@
+<ol-main-nav></ol-main-nav>
+
+<main>
+	<ol-section>
+		<ol-heading element="h1" size="display-2"
+			>Form Component Testing</ol-heading
+		>
+	</ol-section>
+
+	<!-- Test 1: Event Logging -->
+	<ol-section>
+		<div class="test-section">
+			<ol-heading element="h2" size="title-2">Test 1: Event Logging</ol-heading>
+			<p>Monitor all input events (input, change, focus, blur, submit).</p>
+
+			<form id="event-form">
+				<ol-field label="Test Input" hint="Type here and watch events below">
+					<ol-input name="test_input" placeholder="Start typing..."> </ol-input>
+				</ol-field>
+
+				<ol-button-group>
+					<ol-button type="submit" slot="primary-action">Submit</ol-button>
+					<ol-button type="reset" variant="secondary" slot="secondary-actions"
+						>Reset</ol-button
+					>
+				</ol-button-group>
+			</form>
+
+			<h4>Event Log (newest first):</h4>
+			<div id="event-log" class="event-log">
+				<div style="color: var(--color-text-secondary); font-style: italic">
+					No events yet. Interact with the input above.
+				</div>
+			</div>
+		</div>
+	</ol-section>
+
+	<!-- Test 2: Basic Form Submission -->
+	<ol-section>
+		<div class="test-section">
+			<ol-heading element="h2" size="title-2"
+				>Test 2: Basic Form Submission</ol-heading
+			>
+			<p>Tests if form submission captures input data correctly.</p>
+
+			<form id="basic-form">
+				<ol-field label="Username" hint="Enter your username" required>
+					<ol-input
+						name="username"
+						placeholder="Enter username"
+						autocomplete="username"
+						required
+					>
+					</ol-input>
+				</ol-field>
+
+				<ol-button-group>
+					<ol-button type="submit" slot="primary-action">Submit Form</ol-button>
+				</ol-button-group>
+			</form>
+
+			<div id="basic-results" class="test-results hidden">
+				<h4>✓ Form Submitted Successfully!</h4>
+				<div class="data-output" id="basic-output"></div>
+			</div>
+		</div>
+	</ol-section>
+
+	<!-- Test 3: Multiple Fields with Validation -->
+	<ol-section>
+		<div class="test-section">
+			<ol-heading element="h2" size="title-2"
+				>Test 3: Multiple Fields & Validation</ol-heading
+			>
+			<p>Tests multiple inputs with required validation.</p>
+
+			<form id="validation-form">
+				<ol-field
+					label="Email Address"
+					hint="We'll never share your email"
+					required
+				>
+					<ol-input
+						name="email"
+						type="email"
+						placeholder="you@example.com"
+						autocomplete="email"
+						required
+					>
+					</ol-input>
+				</ol-field>
+
+				<ol-field
+					label="Password"
+					hint="Must be at least 8 characters"
+					required
+				>
+					<ol-input
+						name="password"
+						type="password"
+						placeholder="Enter password"
+						autocomplete="new-password"
+						required
+					>
+					</ol-input>
+				</ol-field>
+
+				<ol-field label="Favorite Book" hint="Optional field">
+					<ol-input name="favorite_book" placeholder="Enter book title">
+					</ol-input>
+				</ol-field>
+
+				<ol-button-group>
+					<ol-button type="submit" slot="primary-action"
+						>Create Account</ol-button
+					>
+				</ol-button-group>
+			</form>
+
+			<div id="validation-results" class="test-results hidden">
+				<h4>✓ Form Submitted Successfully!</h4>
+				<div class="data-output" id="validation-output"></div>
+			</div>
+		</div>
+	</ol-section>
+
+	<!-- Test 4: Form Reset -->
+	<ol-section>
+		<div class="test-section">
+			<ol-heading element="h2" size="title-2">Test 4: Form Reset</ol-heading>
+			<p>Tests form reset functionality with both submit and reset buttons.</p>
+
+			<form id="reset-form">
+				<ol-field label="Name" hint="Enter your name">
+					<ol-input name="name" placeholder="John Doe"> </ol-input>
+				</ol-field>
+
+				<ol-field label="Library Card Number">
+					<ol-input name="card_number" placeholder="12345"> </ol-input>
+				</ol-field>
+
+				<ol-button-group>
+					<ol-button type="submit" slot="primary-action">Submit</ol-button>
+					<ol-button type="reset" variant="secondary" slot="secondary-actions"
+						>Reset Form</ol-button
+					>
+				</ol-button-group>
+			</form>
+		</div>
+	</ol-section>
+</main>

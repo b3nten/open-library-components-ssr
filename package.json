@@ -7,16 +7,24 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && touch dist/.nojekyll"
+    "deploy": "npm run build && npx wrangler deploy"
   },
-  "keywords": ["lit", "web-components", "vite"],
+  "keywords": [
+    "lit",
+    "web-components",
+    "vite"
+  ],
   "author": "Lokesh Dhakar",
   "license": "MIT",
   "devDependencies": {
-    "vite": "^5.0.0"
+    "vite": "^7.2.4"
   },
   "dependencies": {
+    "@100x/engine": "^0.0.10",
+    "@lit-labs/ssr": "^3.3.1",
+    "@remix-run/fetch-router": "^0.10.0",
+    "@remix-run/node-fetch-server": "^0.12.0",
+    "itty-router": "^5.0.22",
     "lit": "^3.1.0"
   }
 }
-

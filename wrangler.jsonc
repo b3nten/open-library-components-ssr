@@ -1,0 +1,12 @@
+{
+  "name": "ol-components-prototype",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "compatibility_date": "2025-10-23",
+  "main": "scripts/worker.js",
+  "assets": {
+    "html_handling": "none",
+    "directory": "dist/public"
+  }
+}

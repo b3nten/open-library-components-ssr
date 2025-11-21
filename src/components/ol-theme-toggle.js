@@ -43,8 +43,12 @@ export class OlThemeToggle extends LitElement {
   constructor() {
     super();
     // Check localStorage for saved theme preference, default to light
-    this.theme = localStorage.getItem('theme') || 'light';
-    this.applyTheme();
+    if(typeof window !== "undefined") {
+        this.theme = localStorage.getItem('theme') || 'light';
+        this.applyTheme();
+    } else {
+    	this.theme = "light"
+    }
   }
 
   applyTheme() {
@@ -69,4 +73,3 @@ export class OlThemeToggle extends LitElement {
 }
 
 customElements.define('ol-theme-toggle', OlThemeToggle);
-
